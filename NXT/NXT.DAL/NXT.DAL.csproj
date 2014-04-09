@@ -76,6 +76,7 @@
     <Compile Include="Entities\Pokemons\PokemonMove.cs" />
     <Compile Include="Entities\Pokemons\PokemonStat.cs" />
     <Compile Include="Entities\Pokemons\PokemonType.cs" />
+    <Compile Include="Entities\Pokemons\Type.cs" />
     <Compile Include="Entities\VersionGroup.cs" />
     <Compile Include="Entities\Shape.cs" />
     <Compile Include="Entities\Species.cs" />
