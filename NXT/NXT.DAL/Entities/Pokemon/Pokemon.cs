@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-namespace NXT.DAL.Entities.Pokemon
+namespace NXT.DAL.Entities.Pokemons
 {
     /// <summary>
     /// The Pokemon entity in Veekun.

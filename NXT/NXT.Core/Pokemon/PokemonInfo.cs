@@ -1,4 +1,9 @@
-﻿namespace NXT.Core.Pokemon
+﻿using NXT.Core.Abilities;
+using NXT.Core.Mechanics;
+using NXT.Core.Moves;
+using NXT.Core.World;
+using System.Collections.Generic;
+namespace NXT.Core.Pokemon
 {
     /// <summary>
     /// Information about a Pokemon that has not been created. A template, if you will.
@@ -52,5 +57,31 @@
         /// We should put this property on a Form object instead.
         /// </remarks>
         public bool IsDefault { get; set; }
+        /// <summary>
+        /// Abilities that this Pokemon can learn.
+        /// </summary>
+        /// <remarks>
+        /// Lazy evaluation is a candidate here
+        /// </remarks>
+        public IEnumerable<AbilityInfo> Abilities { get; set; }
+        /// <summary>
+        /// Moves that this Pokemon can learn.
+        /// </summary>
+        /// <remarks>
+        /// Lazy evaluation
+        /// </remarks>
+        public IEnumerable<MoveInfo> Moves { get; set; }
+        /// <summary>
+        /// The habitat that the Pokemon prefers.
+        /// </summary>
+        /// <remarks>
+        /// This is Pokedex entry data, really - perhaps we should put this and other pokedex data in a separate
+        /// class (incl Height, Weight, Color etc)
+        /// </remarks>
+        public Habitat Habitat { get; set; }
+        /// <summary>
+        /// The types that this Pokemon is.
+        /// </summary>
+        public IEnumerable<Type> Types { get; set; }
     }
 }

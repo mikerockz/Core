@@ -4,7 +4,7 @@ using SharpRepository.Repository;
 using NXT.DAL;
 using Moq;
 using NXT.Core.Pokemon;
-using NXT.DAL.Entities.Pokemon;
+using NXT.DAL.Entities.Pokemons;
 
 namespace NXT.Tests.Repositories
 {

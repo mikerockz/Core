@@ -1,5 +1,5 @@
 ﻿using NXT.Core.Pokemon;
-using NXT.DAL.Entities.Pokemon;
+using NXT.DAL.Entities.Pokemons;
 using SharpRepository.Repository;
 namespace NXT.DAL.Repositories.Impl
 {

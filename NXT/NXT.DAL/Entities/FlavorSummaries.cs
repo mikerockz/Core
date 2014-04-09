@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NXT.DAL.Entities
 {
-    public class FlavorSummaries
+    public class SpeciesFlavorSummary
     {
     }
 }
