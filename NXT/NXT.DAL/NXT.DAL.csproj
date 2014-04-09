@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMapperEntityConverter.cs" />
     <Compile Include="Entities\BaseStat.cs" />
     <Compile Include="Entities\CaptureRate.cs" />
     <Compile Include="Entities\Color.cs" />
@@ -65,7 +66,7 @@
     <Compile Include="Entities\SpeciesNames.cs" />
     <Compile Include="Entities\SpeciesProse.cs" />
     <Compile Include="Entities\Stat.cs" />
-    <Compile Include="EntityMapping.cs" />
+    <Compile Include="IEntityConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

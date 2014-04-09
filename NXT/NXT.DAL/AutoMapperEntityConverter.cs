@@ -1,18 +1,20 @@
 ﻿using AutoMapper;
+using System.Linq;
 using NXT.Core.Pokemon;
 using NXT.DAL.Entities;
-using System.Linq;
-
 namespace NXT.DAL
 {
     /// <summary>
-    /// A helper class that registers the mapping between database entities and their
-    /// data transfer objects (DTO) for AutoMapper.
+    /// An entity converter that uses auto mapper.
     /// </summary>
-    public static class EntityMapping
+    class AutoMapperEntityConverter : IEntityConverter
     {
-        public static void Initialize()
+        private readonly IMappingEngine _engine;
+
+        public AutoMapperEntityConverter()
         {
+            // TODO: Avoid the static methods if at all possible
+            // Create mappings here
             Mapper.Initialize(m =>
             {
                 // Pokemon -> PokemonInfo
@@ -25,6 +27,13 @@ namespace NXT.DAL
                     .ForMember(p => p.Order, x => x.MapFrom(i => i.Species.Order))
                     .ForMember(p => p.BaseExperience, x => x.MapFrom(i => i.BaseExperience));
             });
+
+            _engine = Mapper.Engine;
+        }
+
+        public TOut Convert<TIn, TOut>(TIn input)
+        {
+            return _engine.Map<TIn, TOut>(input);
         }
     }
 }
