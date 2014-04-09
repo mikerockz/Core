@@ -1,4 +1,4 @@
-﻿namespace NXT.DAL.Entities
+﻿namespace NXT.DAL.Entities.Pokemon
 {
     public class PokemonType
     {

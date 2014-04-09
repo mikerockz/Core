@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System.Linq;
 using NXT.Core.Pokemon;
-using NXT.DAL.Entities;
+using NXT.DAL.Entities.Pokemon;
 namespace NXT.DAL
 {
     /// <summary>

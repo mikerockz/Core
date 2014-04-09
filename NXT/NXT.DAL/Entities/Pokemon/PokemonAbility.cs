@@ -1,4 +1,4 @@
-﻿namespace NXT.DAL.Entities
+﻿namespace NXT.DAL.Entities.Pokemon
 {
     /// <summary>
     /// The abilities a Pokemon can learn.

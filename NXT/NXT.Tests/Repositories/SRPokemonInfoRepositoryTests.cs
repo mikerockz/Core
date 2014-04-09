@@ -1,10 +1,10 @@
 ﻿using Xunit;
 using NXT.DAL.Repositories.Impl;
 using SharpRepository.Repository;
-using NXT.DAL.Entities;
 using NXT.DAL;
 using Moq;
 using NXT.Core.Pokemon;
+using NXT.DAL.Entities.Pokemon;
 
 namespace NXT.Tests.Repositories
 {
