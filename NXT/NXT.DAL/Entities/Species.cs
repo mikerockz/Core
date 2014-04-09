@@ -26,8 +26,8 @@ namespace NXT.DAL.Entities
         public IEnumerable<SpeciesProse> Prose { get; set; }
         public IEnumerable<FlavorSummaries> FlavorSummaries { get; set; }
 
-        public EvolutionChain? EvolutionChain { get; set; }
-        public Species? EvolvesFrom { get; set; }
-        public Generation? Generation { get; set; }
+        public EvolutionChain EvolutionChain { get; set; }
+        public Species EvolvesFrom { get; set; }
+        public Generation Generation { get; set; }
     }
 }

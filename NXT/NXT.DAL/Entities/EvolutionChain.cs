@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NXT.DAL.Entities
 {
-    class EvolutionChain
+    public class EvolutionChain
     {
     }
 }

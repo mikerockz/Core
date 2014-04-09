@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NXT.DAL.Entities
 {
-    class GenderRate
+    public class GenderRate
     {
     }
 }
