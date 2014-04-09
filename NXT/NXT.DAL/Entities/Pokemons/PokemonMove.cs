@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace NXT.DAL.Entities.Pokemons
+﻿namespace NXT.DAL.Entities.Pokemons
 {
     public class PokemonMove
     {
+        public Pokemon Pokemon { get; set; }
+        public Move Move { get; set; }
+        public VersionGroup VersionGroup { get; set; }
+        public PokemonMoveMethod MoveMethod { get; set; }
+        public int Order { get; set; }
+        public int Level { get; set; }
     }
 }

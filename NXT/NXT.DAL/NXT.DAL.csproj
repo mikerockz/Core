@@ -62,7 +62,9 @@
     <Compile Include="Entities\Habitat.cs" />
     <Compile Include="Entities\GameVersion.cs" />
     <Compile Include="Entities\Items\Item.cs" />
+    <Compile Include="Entities\Moves\Move.cs" />
     <Compile Include="Entities\Pokemons\PokemonEggGroup.cs" />
+    <Compile Include="Entities\Pokemons\PokemonMoveMethod.cs" />
     <Compile Include="Entities\Pokemons\PokemonPokedexNumber.cs" />
     <Compile Include="Entities\Pokemons\Pokemon.cs" />
     <Compile Include="Entities\Pokemons\PokemonAbility.cs" />
