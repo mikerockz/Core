@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NXT.DAL.Entities
+namespace NXT.DAL.Entities.Pokemons
 {
-    public class PokemonPokedexNumber
+    public class PokemonFormName
     {
     }
 }
