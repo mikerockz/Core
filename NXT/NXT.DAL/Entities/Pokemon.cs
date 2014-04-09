@@ -6,6 +6,8 @@ namespace NXT.DAL.Entities
     /// </summary>
     public class Pokemon
     {
+        public int Id { get; set; }
+        public bool IsDefault { get; set; }
         public string Identifier { get; set; }
 
         public float Height { get; set; }
@@ -14,15 +16,14 @@ namespace NXT.DAL.Entities
         public int BaseExperience { get; set; }
         public int Order { get; set; }
 
+        // Foreign 
         public Species Species { get; set; }
-        public IEnumerable<Stat> Stats { get; set; }
-        public IEnumerable<BaseStat> BaseStats { get; set; }
+        public IEnumerable<PokemonStat> Stats { get; set; }
         public IEnumerable<PokemonAbility> Abilities { get; set; }
         public IEnumerable<PokemonType> Types { get; set; }
-
-
-        public int Id { get; set; }
-
-        public bool IsDefault { get; set; }
+        public IEnumerable<PokemonForm> Forms { get; set; }
+        public IEnumerable<PokemonItem> Items { get; set; }
+        public IEnumerable<PokemonMove> Moves { get; set; }
+        public IEnumerable<PokemonGameIndice> GameIndicies { get; set; }
     }
 }
