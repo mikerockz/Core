@@ -17,6 +17,9 @@ namespace NXT.DAL.Entities
         public Species Species { get; set; }
         public IEnumerable<Stat> Stats { get; set; }
         public IEnumerable<BaseStat> BaseStats { get; set; }
+        public IEnumerable<PokemonAbility> Abilities { get; set; }
+        public IEnumerable<PokemonType> Types { get; set; }
+
 
         public int Id { get; set; }
 
