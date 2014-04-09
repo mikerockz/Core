@@ -7,7 +7,7 @@ namespace NXT.DAL
     /// <summary>
     /// An entity converter that uses auto mapper.
     /// </summary>
-    class AutoMapperEntityConverter : IEntityConverter
+    internal class AutoMapperEntityConverter : IEntityConverter
     {
         private readonly IMappingEngine _engine;
 

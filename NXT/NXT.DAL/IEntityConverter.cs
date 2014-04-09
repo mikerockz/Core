@@ -6,7 +6,7 @@
     /// <remarks>
     /// Do not expose this outside of the DAL.
     /// </remarks>
-    interface IEntityConverter
+    internal interface IEntityConverter
     {
         /// <summary>
         /// Convert from TIn to TOut.
