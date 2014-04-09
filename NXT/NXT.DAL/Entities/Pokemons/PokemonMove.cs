@@ -1,4 +1,5 @@
-﻿namespace NXT.DAL.Entities.Pokemons
+﻿using NXT.DAL.Entities.Moves;
+namespace NXT.DAL.Entities.Pokemons
 {
     public class PokemonMove
     {

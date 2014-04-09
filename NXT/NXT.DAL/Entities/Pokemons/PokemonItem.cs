@@ -1,4 +1,5 @@
-﻿namespace NXT.DAL.Entities.Pokemons
+﻿using NXT.DAL.Entities.Items;
+namespace NXT.DAL.Entities.Pokemons
 {
     public class PokemonItem
     {
