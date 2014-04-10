@@ -23,11 +23,11 @@ namespace NXT.Core.Pokemon
         /// </remarks>
         public int Id { get; set; }
         /// <summary>
-        /// 
+        /// The height of the Pokemon
         /// </summary>
         public float Height { get; set; }
         /// <summary>
-        /// 
+        /// The weight of the Pokemon
         /// </summary>
         public float Weight { get; set; }
         /// <summary>
@@ -38,7 +38,7 @@ namespace NXT.Core.Pokemon
         /// </remarks>
         public string Name { get; set; }
         /// <summary>
-        /// 
+        /// The base experience of a Pokemon - this is used in calculations for EV/IV yield.
         /// </summary>
         public int BaseExperience { get; set; }
         /// <summary>
@@ -83,5 +83,14 @@ namespace NXT.Core.Pokemon
         /// The types that this Pokemon is.
         /// </summary>
         public IEnumerable<Type> Types { get; set; }
+        /// <summary>
+        /// The default form for this Pokemon. In cases of Pokemon like
+        /// Castform, the default form is the one it has before morphing.
+        /// </summary>
+        public Form DefaultForm { get; set; }
+        /// <summary>
+        /// Any extra forms that this Pokemon has.
+        /// </summary>
+        public IEnumerable<Form> ExtraForms { get; set; }
     }
 }

@@ -44,6 +44,7 @@
     <Compile Include="Abilities\AbilityInfo.cs" />
     <Compile Include="Moves\MoveInfo.cs" />
     <Compile Include="Mechanics\Type.cs" />
+    <Compile Include="Pokemon\Form.cs" />
     <Compile Include="World\Habitat.cs" />
     <Compile Include="Pokemon\PokemonInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
