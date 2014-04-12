@@ -63,6 +63,12 @@
     <Compile Include="Entities\GameVersion.cs" />
     <Compile Include="Entities\Items\Item.cs" />
     <Compile Include="Entities\Moves\Move.cs" />
+    <Compile Include="Entities\Moves\MoveEffects.cs" />
+    <Compile Include="Entities\Moves\MoveBattleStyles.cs" />
+    <Compile Include="Entities\Moves\MoveMetaAilmentNames.cs" />
+    <Compile Include="Entities\Moves\MoveMetaAilments.cs" />
+    <Compile Include="Entities\Moves\MoveMetaCategories.cs" />
+    <Compile Include="Entities\Moves\MoveTargets.cs" />
     <Compile Include="Entities\Pokemons\PokemonEggGroup.cs" />
     <Compile Include="Entities\Pokemons\PokemonMoveMethod.cs" />
     <Compile Include="Entities\Pokemons\PokemonPokedexNumber.cs" />
