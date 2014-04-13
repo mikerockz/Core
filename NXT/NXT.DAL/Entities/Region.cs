@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace NXT.DAL.Entities
+﻿namespace NXT.DAL.Entities
 {
-    class Region
+    public class Region
     {
         public int Id { get; set; }
         public string Identifier { get; set; }

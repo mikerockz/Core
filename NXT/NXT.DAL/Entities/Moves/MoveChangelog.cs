@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using NXT.DAL.Entities.Pokemons;
 namespace NXT.DAL.Entities.Moves
 {
-    class MoveChangelog
+    public class MoveChangelog
     {
-        Move Move { get; set; }
-        VersionGroup VersionGroup { get; set; }
-        Type Type { get; set; }
-        MoveEffect MoveEffect { get; set; }
+        public Move Move { get; set; }
+        public VersionGroup VersionGroup { get; set; }
+        public Type Type { get; set; }
+        public MoveEffect MoveEffect { get; set; }
     }
 }

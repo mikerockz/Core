@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
-using NXT.DAL.Entities.Pokemons;
-namespace NXT.DAL.Entities
+﻿using NXT.DAL.Entities.Pokemons;
+using System.Collections.Generic;
+namespace NXT.DAL.Entities.Species
 {
     /// <summary>
-    /// The PokemonSpecies entity in Veekun.
+    /// The Species entity in Veekun.
     /// </summary>
-    public class Species
+    /// <remarks>
+    /// Violating code conventions for species here so we can use Species as a namespace
+    /// </remarks>
+    public class _Species
     {
         public int Id { get; set; }
         public string Identifier { get; set; }
@@ -24,7 +27,7 @@ namespace NXT.DAL.Entities
         public GrowthRate GrowthRate { get; set; }
         public bool CanSwitchForms { get; set; }
         public int Order { get; set; }
-        public IEnumerable<SpeciesNames> Names { get; set; }
+        public IEnumerable<SpeciesName> Names { get; set; }
         public IEnumerable<SpeciesProse> Prose { get; set; }
         public IEnumerable<SpeciesFlavorSummary> FlavorSummaries { get; set; }
         public IEnumerable<SpeciesFlavorText> FlavorText { get; set; }
@@ -38,7 +41,7 @@ namespace NXT.DAL.Entities
         public IEnumerable<PokemonEggGroup> EggGroups { get; set; }
         public IEnumerable<PokemonPokedexNumber> PokedexNumbers { get; set; }
         public EvolutionChain EvolutionChain { get; set; }
-        public Species EvolvesFrom { get; set; }
+        public _Species EvolvesFrom { get; set; }
         public Generation Generation { get; set; }
     }
 }

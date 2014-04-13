@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using NXT.DAL.Entities.Species;
+using System.Collections.Generic;
 namespace NXT.DAL.Entities.Pokemons
 {
     /// <summary>
@@ -17,7 +18,7 @@ namespace NXT.DAL.Entities.Pokemons
         public int Order { get; set; }
 
         // Foreign 
-        public Species Species { get; set; }
+        public _Species Species { get; set; }
         public IEnumerable<PokemonStat> Stats { get; set; }
         public IEnumerable<PokemonAbility> Abilities { get; set; }
         public IEnumerable<PokemonType> Types { get; set; }
