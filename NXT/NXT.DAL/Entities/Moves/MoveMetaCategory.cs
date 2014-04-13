@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace NXT.DAL.Entities
+namespace NXT.DAL.Entities.Moves
 {
-    class Region
+    class MoveMetaCategory 
     {
         public int Id { get; set; }
         public string Identifier { get; set; }
     }
 }
- 

@@ -15,10 +15,10 @@ namespace NXT.DAL.Entities.Moves
 
         //foreign
         public Generation Generation { get; set; }
-        public MoveMetaCategories MetaCategory { get; set; }
-        public IEnumerable<MoveTargets> Targets { get; set; }
-        public IEnumerable<MoveEffects> Effects { get; set; }
-        public IEnumerable<MoveBattleStyles> BattleStyles { get; set; }
-        public IEnumerable<MoveMetaAilments> MetaAliments { get; set; }
+        public MoveMetaCategory MetaCategory { get; set; }
+        public IEnumerable<MoveTarget> Targets { get; set; }
+        public IEnumerable<MoveEffect> Effects { get; set; }
+        public IEnumerable<MoveBattleStyle> BattleStyles { get; set; }
+        public IEnumerable<MoveMetaAilment> MetaAliments { get; set; }
     }
 }
