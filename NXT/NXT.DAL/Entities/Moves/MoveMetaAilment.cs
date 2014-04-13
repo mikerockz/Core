@@ -6,6 +6,6 @@ namespace NXT.DAL.Entities.Moves
         public int Id { get; set; }  
         public string Identifier { get; set; }
 
-        public IEnumerable<MoveMetaAilmentName> Names { get; set; }
+        public ICollection<MoveMetaAilmentName> Names { get; set; }
     }
 }

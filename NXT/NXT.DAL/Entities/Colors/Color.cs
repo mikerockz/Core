@@ -5,6 +5,6 @@ namespace NXT.DAL.Entities.Colors
     {
         public int Id { get; set; }
         public string Identifier { get; set; }
-        public IEnumerable<ColorName> Names { get; set; }
+        public ICollection<ColorName> Names { get; set; }
     }
 }

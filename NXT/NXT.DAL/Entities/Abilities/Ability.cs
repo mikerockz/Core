@@ -17,9 +17,9 @@ namespace NXT.DAL.Entities.Abilities
         /// Unknown as to what it does. Needs investigation.
         /// </summary>
         public bool IsMainSeries { get; set; }
-        public IEnumerable<AbilityName> Names { get; set; }
-        public IEnumerable<AbilityProse> Prose { get; set; }
-        public IEnumerable<AbilityFlavorText> FlavorText { get; set; }
-        public IEnumerable<AbilityChangelog> Changelog { get; set; }
+        public ICollection<AbilityName> Names { get; set; }
+        public ICollection<AbilityProse> Prose { get; set; }
+        public ICollection<AbilityFlavorText> FlavorText { get; set; }
+        public ICollection<AbilityChangelog> Changelog { get; set; }
     }
 }

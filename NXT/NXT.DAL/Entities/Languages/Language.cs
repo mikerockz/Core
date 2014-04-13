@@ -26,6 +26,6 @@ namespace NXT.DAL.Entities.Languages
         /// <summary>
         /// The names of this language in other languages.
         /// </summary>
-        public IEnumerable<LanguageName> Names { get; set; }
+        public ICollection<LanguageName> Names { get; set; }
     }
 }

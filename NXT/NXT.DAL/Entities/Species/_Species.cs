@@ -40,24 +40,24 @@ namespace NXT.DAL.Entities.Species
         public GrowthRate GrowthRate { get; set; }
         public bool CanSwitchForms { get; set; }
         public int Order { get; set; }
-        public IEnumerable<SpeciesName> Names { get; set; }
-        public IEnumerable<SpeciesProse> Prose { get; set; }
+        public ICollection<SpeciesName> Names { get; set; }
+        public ICollection<SpeciesProse> Prose { get; set; }
         /// <summary>
         /// The flavour summaries for a Pokemon.
         /// Marked as obsolete due to only 1 entry of this in Veekun.
         /// </summary>
         [Obsolete]
-        public IEnumerable<SpeciesFlavorSummary> FlavorSummaries { get; set; }
-        public IEnumerable<SpeciesFlavorText> FlavorText { get; set; }
+        public ICollection<SpeciesFlavorSummary> FlavorSummaries { get; set; }
+        public ICollection<SpeciesFlavorText> FlavorText { get; set; }
         /// <summary>
         /// Members of this species.
         /// </summary>
-        public IEnumerable<Pokemon> Members { get; set; }
+        public ICollection<Pokemon> Members { get; set; }
         /// <summary>
         /// The egg groups that this Species belongs to
         /// </summary>
-        public IEnumerable<PokemonEggGroup> EggGroups { get; set; }
-        public IEnumerable<PokemonPokedexNumber> PokedexNumbers { get; set; }
+        public ICollection<PokemonEggGroup> EggGroups { get; set; }
+        public ICollection<PokemonPokedexNumber> PokedexNumbers { get; set; }
         public EvolutionChain EvolutionChain { get; set; }
         public _Species EvolvesFrom { get; set; }
         public Generation Generation { get; set; }

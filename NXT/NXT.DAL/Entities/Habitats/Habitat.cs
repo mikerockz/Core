@@ -8,6 +8,6 @@ namespace NXT.DAL.Entities.Habitats
     {
         public int Id { get; set; }
         public string Identifier { get; set; }
-        public IEnumerable<HabitatName> Names { get; set; }
+        public ICollection<HabitatName> Names { get; set; }
     }
 }

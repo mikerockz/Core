@@ -22,8 +22,8 @@ namespace NXT.DAL.Entities.Pokemons
         public int Order { get; set; }
 
 
-        public IEnumerable<PokemonFormName> FormNames { get; set; }
-        public IEnumerable<PokemonFormGeneration> Generations { get; set; }
+        public ICollection<PokemonFormName> FormNames { get; set; }
+        public ICollection<PokemonFormGeneration> Generations { get; set; }
         public Pokemon Pokemon { get; set; }
         public VersionGroup IntroducedIn { get; set; }
     }

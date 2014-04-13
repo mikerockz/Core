@@ -15,6 +15,6 @@ namespace NXT.DAL.Entities.Abilities
         /// <summary>
         /// Prose describing the change.
         /// </summary>
-        public IEnumerable<AbilityChangelogProse> Prose { get; set; }
+        public ICollection<AbilityChangelogProse> Prose { get; set; }
     }
 }

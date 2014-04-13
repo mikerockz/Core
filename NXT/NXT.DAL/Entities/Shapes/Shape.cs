@@ -8,6 +8,6 @@ namespace NXT.DAL.Entities.Shapes
     {
         public int Id { get; set; }
         public string Identifier { get; set; }
-        public IEnumerable<ShapeProse> Prose { get; set; }
+        public ICollection<ShapeProse> Prose { get; set; }
     }
 }

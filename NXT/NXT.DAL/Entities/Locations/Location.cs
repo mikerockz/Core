@@ -12,9 +12,9 @@ namespace NXT.DAL.Entities.Locations
         public int Id { get; set; }
         public string Identifier { get; set; }
         public Region Region { get; set; }
-        public IEnumerable<LocationArea> LocationAreas { get; set; }
-        public IEnumerable<LocationGameIndex> LocationGameIndices { get; set; }
-        public IEnumerable<LocationName> LocationNames { get; set; }
-        public IEnumerable<PokemonEvolution> PokemonEvolutions { get; set; }
+        public ICollection<LocationArea> LocationAreas { get; set; }
+        public ICollection<LocationGameIndex> LocationGameIndices { get; set; }
+        public ICollection<LocationName> LocationNames { get; set; }
+        public ICollection<PokemonEvolution> PokemonEvolutions { get; set; }
     }
 }

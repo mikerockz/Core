@@ -17,6 +17,6 @@ namespace NXT.DAL.Entities
         /// <summary>
         /// Members of the evolution chain.
         /// </summary>
-        public IEnumerable<_Species> Members { get; set; }
+        public ICollection<_Species> Members { get; set; }
     }
 }

@@ -5,8 +5,8 @@ namespace NXT.DAL.Entities.Moves
     public class MoveEffect
     { 
         public int Id { get; set; }
-        public IEnumerable<MoveChangelog> MoveChangelogs { get; set; }
-        public IEnumerable<Move> Moves { get; set; }
-        public IEnumerable<MoveEffectProse> MoveEffectProses { get; set; }
+        public ICollection<MoveChangelog> MoveChangelogs { get; set; }
+        public ICollection<Move> Moves { get; set; }
+        public ICollection<MoveEffectProse> MoveEffectProses { get; set; }
     }
 }

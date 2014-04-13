@@ -6,10 +6,10 @@ namespace NXT.DAL.Entities.Moves
     {
         public int Id { get; set; } 
         public string Identifier { get; set; }
-        public IEnumerable<Move> Moves { get; set; }
-        public IEnumerable<Stat> Stats { get; set; }
-        public IEnumerable<Type> Types { get; set; }
-        public IEnumerable<MoveDamageClassProse> MoveDamageClassProses { get; set; }
+        public ICollection<Move> Moves { get; set; }
+        public ICollection<Stat> Stats { get; set; }
+        public ICollection<Type> Types { get; set; }
+        public ICollection<MoveDamageClassProse> MoveDamageClassProses { get; set; }
 
     }
 }

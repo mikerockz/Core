@@ -13,8 +13,8 @@ namespace NXT.DAL.Entities.Locations
         public Location Location { get; set; }
         public int GameIndex { get; set; }
 
-        public IEnumerable<LocationAreaEncounterRate> LocationAreaEncounterRates { get; set; }
-        public IEnumerable<LocationAreaProse> LocationAreaProses { get; set; }
-        public IEnumerable<Encounter> LocationAreaEncounters { get; set; }
+        public ICollection<LocationAreaEncounterRate> LocationAreaEncounterRates { get; set; }
+        public ICollection<LocationAreaProse> LocationAreaProses { get; set; }
+        public ICollection<Encounter> LocationAreaEncounters { get; set; }
     }
 }

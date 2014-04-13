@@ -12,6 +12,6 @@ namespace NXT.DAL.Entities.Growth
         /// LaTeX formula for pokemon's growth.
         /// </summary>
         public string Formula { get; set; }
-        public IEnumerable<GrowthRateProse> Prose { get; set; }
+        public ICollection<GrowthRateProse> Prose { get; set; }
     }
 }

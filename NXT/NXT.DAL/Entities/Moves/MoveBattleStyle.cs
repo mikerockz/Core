@@ -8,7 +8,7 @@ namespace NXT.DAL.Entities.Moves
         public int Id { get; set; }  
         public string Identifier { get; set; }
 
-        public IEnumerable<MoveBattleStyleProse> BattleStyleProses { get; set; }
+        public ICollection<MoveBattleStyleProse> BattleStyleProses { get; set; }
 
 
         // clockworks 13/04/2014
@@ -16,6 +16,6 @@ namespace NXT.DAL.Entities.Moves
         // not something you could tell by looking at the database but when you think about it
         // it makes sense - why would a move battle style need to know about pokemon nature? 
         // however natures have preferred battle styles
-        // public IEnumerable<BattleStylePreference> NatureBattleStylePreferences { get; set; }
+        // public ICollection<BattleStylePreference> NatureBattleStylePreferences { get; set; }
     }
 }

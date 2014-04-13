@@ -24,9 +24,9 @@ namespace NXT.DAL.Entities.Moves
         public Generation Generation { get; set; }
         public MoveMetaCategory MetaCategory { get; set; }
 
-        public IEnumerable<MoveChangelog> MoveChangelogs { get; set; }
-        public IEnumerable<MoveTarget> Targets { get; set; }
-        public IEnumerable<MoveBattleStyle> BattleStyles { get; set; }
-        public IEnumerable<MoveMetaAilment> MetaAilments { get; set; }
+        public ICollection<MoveChangelog> MoveChangelogs { get; set; }
+        public ICollection<MoveTarget> Targets { get; set; }
+        public ICollection<MoveBattleStyle> BattleStyles { get; set; }
+        public ICollection<MoveMetaAilment> MetaAilments { get; set; }
     }
 }
