@@ -100,8 +100,7 @@
     <Compile Include="Entities\Moves\MoveMetaAilmentName.cs" />
     <Compile Include="Entities\Moves\MoveMetaCategory.cs" />
     <Compile Include="Entities\Moves\MoveTarget.cs" />
-    <Compile Include="Entities\Nature\Nature.cs" />
-    <Compile Include="Entities\Nature\Nature_Battle_Style_Preference.cs" />
+    <Compile Include="Entities\Natures\Nature.cs" />
     <Compile Include="Entities\Pokemons\PokemonEggGroup.cs" />
     <Compile Include="Entities\Pokemons\PokemonMoveMethod.cs" />
     <Compile Include="Entities\Pokemons\PokemonPokedexNumber.cs" />
