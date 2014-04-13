@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NXT.DAL.Entities.Names;
 
 namespace NXT.DAL.Entities.Pokemons
 {
-    public class PokemonFormName
+    public class PokemonFormName : AbstractName<PokemonForm>
     {
     }
 }

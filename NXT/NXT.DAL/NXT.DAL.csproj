@@ -51,7 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperEntityConverter.cs" />
-    <Compile Include="Entities\Ability.cs" />
+    <Compile Include="Entities\Abilities\Ability.cs" />
+    <Compile Include="Entities\Abilities\AbilityName.cs" />
     <Compile Include="Entities\CaptureRate.cs" />
     <Compile Include="Entities\Colors\Color.cs" />
     <Compile Include="Entities\Colors\ColorName.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Entities\Habitats\HabitatName.cs" />
     <Compile Include="Entities\Languages\Language.cs" />
     <Compile Include="Entities\Languages\LanguageName.cs" />
+    <Compile Include="Entities\Names\AbstractName.cs" />
     <Compile Include="Entities\Natures\BattleStylePreference.cs" />
     <Compile Include="Entities\Eggs\EggGroup.cs" />
     <Compile Include="Entities\Pokedexes\Pokedex.cs" />

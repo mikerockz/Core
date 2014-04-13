@@ -1,6 +1,7 @@
-﻿namespace NXT.DAL.Entities.Moves
+﻿using NXT.DAL.Entities.Names;
+namespace NXT.DAL.Entities.Moves
 {
-    public class MoveMetaAilmentName
+    public class MoveMetaAilmentName : AbstractName<MoveMetaAilment>
     { 
          
 

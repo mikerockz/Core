@@ -1,14 +1,10 @@
-﻿using NXT.DAL.Entities.Languages;
+﻿using NXT.DAL.Entities.Names;
 namespace NXT.DAL.Entities.Habitats
 {
     /// <summary>
     /// The name of a Habitat.
     /// </summary>
-    public class HabitatName
+    public class HabitatName : AbstractName<Habitat>
     {
-        // pk on habitat + language
-        public Habitat Habitat { get; set; }
-        public Language Language { get; set; }
-        public string Name { get; set; }
     }
 }
