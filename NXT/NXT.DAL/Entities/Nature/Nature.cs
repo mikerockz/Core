@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NXT.DAL.Entities.Nature
 {
-    class Nature
+    public class Nature
     {
         public int Id { get; set; }
         public string Identifier { get; set; }

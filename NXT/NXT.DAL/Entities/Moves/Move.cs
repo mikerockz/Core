@@ -1,4 +1,6 @@
+
 ﻿using NXT.DAL.Entities.Generations;
+﻿using NXT.DAL.Entities.Pokemons;
 using System.Collections.Generic;
 namespace NXT.DAL.Entities.Moves
 {
@@ -15,10 +17,19 @@ namespace NXT.DAL.Entities.Moves
         public int EffectChance { get; set; }
 
         //foreign
+        public MoveDamageClass MoveDamageClass { get; set; }
+        public MoveMeta MoveMeta { get; set; }
+        public MoveEffect Effect { get; set; }
+        public Type Type { get; set; }
         public Generation Generation { get; set; }
         public MoveMetaCategory MetaCategory { get; set; }
+
+        public IEnumerable<PokemonEvolution> KnownMovePokemonEvolutions { get; set; }
+        public IEnumerable<MoveChangelog> MoveChangelogs { get; set; }
+
+
         public IEnumerable<MoveTarget> Targets { get; set; }
-        public IEnumerable<MoveEffect> Effects { get; set; }
+        
         public IEnumerable<MoveBattleStyle> BattleStyles { get; set; }
         public IEnumerable<MoveMetaAilment> MetaAliments { get; set; }
     }

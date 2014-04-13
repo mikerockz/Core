@@ -5,7 +5,7 @@ using System.Text;
 using NXT.DAL.Entities.Nature;
 namespace NXT.DAL.Entities.Moves
 {
-    class Nature_Battle_Style_Preference
+    public class Nature_Battle_Style_Preference
     {
         public Nature.Nature Nature { get; set; }
         public MoveBattleStyle MovementBattleStyle { get; set; }

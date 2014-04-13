@@ -1,4 +1,8 @@
+
 ﻿using System.Collections.Generic;
+﻿using NXT.DAL.Entities.Regions;
+
+
 namespace NXT.DAL.Entities.Generations
 {
     public class Generation

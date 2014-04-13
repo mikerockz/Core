@@ -60,6 +60,8 @@
     <Compile Include="Entities\CaptureRate.cs" />
     <Compile Include="Entities\Colors\Color.cs" />
     <Compile Include="Entities\Colors\ColorName.cs" />
+    <Compile Include="Entities\Encounters\Encounter.cs" />
+    <Compile Include="Entities\Encounters\EncounterMethod.cs" />
     <Compile Include="Entities\EntityExtensions.cs" />
     <Compile Include="Entities\EvolutionChain.cs" />
     <Compile Include="Entities\Generations\GenerationName.cs" />
@@ -67,10 +69,19 @@
     <Compile Include="Entities\Habitats\HabitatName.cs" />
     <Compile Include="Entities\Languages\Language.cs" />
     <Compile Include="Entities\Languages\LanguageName.cs" />
+    <Compile Include="Entities\Locations\Location.cs" />
+    <Compile Include="Entities\Locations\LocationArea.cs" />
+    <Compile Include="Entities\Locations\LocationAreaEncounterRate.cs" />
+    <Compile Include="Entities\Locations\LocationAreaProse.cs" />
+    <Compile Include="Entities\Locations\LocationGameIndex.cs" />
+    <Compile Include="Entities\Locations\LocationName.cs" />
+    <Compile Include="Entities\Moves\MoveDamageClassProse.cs" />
+    <Compile Include="Entities\Moves\MoveEffectProse.cs" />
     <Compile Include="Entities\Names\AbstractName.cs" />
     <Compile Include="Entities\Natures\BattleStylePreference.cs" />
     <Compile Include="Entities\Eggs\EggGroup.cs" />
     <Compile Include="Entities\Pokedexes\Pokedex.cs" />
+    <Compile Include="Entities\Pokemons\PokemonEvolution.cs" />
     <Compile Include="Entities\Shapes\ShapeProse.cs" />
     <Compile Include="Entities\Species\SpeciesFlavorSummary.cs" />
     <Compile Include="Entities\Generations\Generation.cs" />
@@ -89,6 +100,8 @@
     <Compile Include="Entities\Moves\MoveMetaAilmentName.cs" />
     <Compile Include="Entities\Moves\MoveMetaCategory.cs" />
     <Compile Include="Entities\Moves\MoveTarget.cs" />
+    <Compile Include="Entities\Nature\Nature.cs" />
+    <Compile Include="Entities\Nature\Nature_Battle_Style_Preference.cs" />
     <Compile Include="Entities\Pokemons\PokemonEggGroup.cs" />
     <Compile Include="Entities\Pokemons\PokemonMoveMethod.cs" />
     <Compile Include="Entities\Pokemons\PokemonPokedexNumber.cs" />
@@ -103,6 +116,8 @@
     <Compile Include="Entities\Pokemons\PokemonStat.cs" />
     <Compile Include="Entities\Pokemons\PokemonType.cs" />
     <Compile Include="Entities\Pokemons\Type.cs" />
+    <Compile Include="Entities\Regions\Region.cs" />
+    <Compile Include="Entities\Regions\RegionName.cs" />
     <Compile Include="Entities\VersionGroup.cs" />
     <Compile Include="Entities\Shapes\Shape.cs" />
     <Compile Include="Entities\Species\_Species.cs" />
