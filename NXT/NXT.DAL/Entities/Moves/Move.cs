@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using NXT.DAL.Entities.Generations;
+using System.Collections.Generic;
 namespace NXT.DAL.Entities.Moves
 {
     public class Move

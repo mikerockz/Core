@@ -1,5 +1,11 @@
-﻿using NXT.DAL.Entities.Pokemons;
+﻿using NXT.DAL.Entities.Colors;
+using NXT.DAL.Entities.Shapes;
+using NXT.DAL.Entities.Pokemons;
+using System;
 using System.Collections.Generic;
+using NXT.DAL.Entities.Habitats;
+using NXT.DAL.Entities.Growth;
+using NXT.DAL.Entities.Generations;
 namespace NXT.DAL.Entities.Species
 {
     /// <summary>
@@ -15,8 +21,15 @@ namespace NXT.DAL.Entities.Species
         public Color Color { get; set; }
         public Shape Shape { get; set; }
         public Habitat Habitat { get; set; }
-        public GenderRate GenderRate { get; set; }
-        public CaptureRate CaptureRate { get; set; }
+        /// <summary>
+        /// Apparently, this is a number and not a table. Might end up being an enum.
+        /// </summary>
+        public int GenderRate { get; set; }
+        /// <summary>
+        /// Another non-table. I think we will want some way of overriding this, because I don't think
+        /// we want to rely on the veekun implementation.
+        /// </summary>
+        public int CaptureRate { get; set; }
         public int BaseHappiness { get; set; }
         public bool IsBaby { get; set; }
         public int HatchCounter { get; set; }
@@ -29,6 +42,11 @@ namespace NXT.DAL.Entities.Species
         public int Order { get; set; }
         public IEnumerable<SpeciesName> Names { get; set; }
         public IEnumerable<SpeciesProse> Prose { get; set; }
+        /// <summary>
+        /// The flavour summaries for a Pokemon.
+        /// Marked as obsolete due to only 1 entry of this in Veekun.
+        /// </summary>
+        [Obsolete]
         public IEnumerable<SpeciesFlavorSummary> FlavorSummaries { get; set; }
         public IEnumerable<SpeciesFlavorText> FlavorText { get; set; }
         /// <summary>
