@@ -52,7 +52,11 @@
   <ItemGroup>
     <Compile Include="AutoMapperEntityConverter.cs" />
     <Compile Include="Entities\Abilities\Ability.cs" />
+    <Compile Include="Entities\Abilities\AbilityChangelog.cs" />
+    <Compile Include="Entities\Abilities\AbilityChangelogProse.cs" />
+    <Compile Include="Entities\Abilities\AbilityFlavorText.cs" />
     <Compile Include="Entities\Abilities\AbilityName.cs" />
+    <Compile Include="Entities\Abilities\AbilityProse.cs" />
     <Compile Include="Entities\CaptureRate.cs" />
     <Compile Include="Entities\Colors\Color.cs" />
     <Compile Include="Entities\Colors\ColorName.cs" />
