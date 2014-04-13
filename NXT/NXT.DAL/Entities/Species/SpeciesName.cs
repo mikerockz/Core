@@ -1,7 +1,11 @@
-﻿namespace NXT.DAL.Entities.Species
+﻿using NXT.DAL.Entities.Languages;
+namespace NXT.DAL.Entities.Species
 {
     public class SpeciesName
     {
-        public int LanguageId { get; set; }
+        /// <summary>
+        /// The language this name is in.
+        /// </summary>
+        public Language Language { get; set; } 
     }
 }
