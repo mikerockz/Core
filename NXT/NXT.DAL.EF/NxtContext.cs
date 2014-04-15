@@ -1,9 +1,13 @@
 ﻿using NXT.DAL.EF.Conventions;
+using NXT.DAL.Entities.Regions;
 using System.Data.Entity;
 namespace NXT.DAL.EF
 {
     public class NxtContext : DbContext
     {
+        public virtual DbSet<Region> Regions { get; set; }
+        public virtual DbSet<RegionName> RegionNames { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // Conventions

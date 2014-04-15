@@ -12,9 +12,6 @@ namespace NXT.DAL.Entities.Regions
     {
         public int Id { get; set; }
         public string Identifier { get; set; }
-        ICollection<Generation> MainGeneration { get; set; }
-        ICollection<RegionName> RegionNames { get; set; }
-        ICollection<Location> RegionLocations { get; set; }
-        ICollection<Pokedex> PokeDexes { get; set; }
+        public virtual ICollection<RegionName> RegionNames { get; set; }
      }
 }
