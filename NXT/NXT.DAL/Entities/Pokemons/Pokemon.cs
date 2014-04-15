@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using NXT.DAL.Entities.Species;
+using System.Collections.Generic;
 namespace NXT.DAL.Entities.Pokemons
 {
     /// <summary>
@@ -17,13 +18,13 @@ namespace NXT.DAL.Entities.Pokemons
         public int Order { get; set; }
 
         // Foreign 
-        public Species Species { get; set; }
-        public IEnumerable<PokemonStat> Stats { get; set; }
-        public IEnumerable<PokemonAbility> Abilities { get; set; }
-        public IEnumerable<PokemonType> Types { get; set; }
-        public IEnumerable<PokemonForm> Forms { get; set; }
-        public IEnumerable<PokemonItem> Items { get; set; }
-        public IEnumerable<PokemonMove> Moves { get; set; }
-        public IEnumerable<PokemonGameIndice> GameIndicies { get; set; }
+        public _Species Species { get; set; }
+        public ICollection<PokemonStat> Stats { get; set; }
+        public ICollection<PokemonAbility> Abilities { get; set; }
+        public ICollection<PokemonType> Types { get; set; }
+        public ICollection<PokemonForm> Forms { get; set; }
+        public ICollection<PokemonItem> Items { get; set; }
+        public ICollection<PokemonMove> Moves { get; set; }
+        public ICollection<PokemonGameIndice> GameIndicies { get; set; }
     }
 }

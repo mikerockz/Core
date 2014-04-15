@@ -2,6 +2,8 @@
 using System.Linq;
 using NXT.Core.Pokemon;
 using NXT.DAL.Entities.Pokemons;
+using NXT.DAL.Entities;
+
 namespace NXT.DAL
 {
     /// <summary>
@@ -16,7 +18,7 @@ namespace NXT.DAL
             // TODO: Avoid the static methods if at all possible
             // Create mappings here
             Mapper.Initialize(m =>
-            {
+            { 
                 // Pokemon -> PokemonInfo
                 m.CreateMap<Pokemon, PokemonInfo>()
                     // Pokemon
@@ -31,9 +33,9 @@ namespace NXT.DAL
                     .ForMember(p => p.Types, x => x.MapFrom(i => i.Types))
 
                     // Species
-                    .ForMember(p => p.Name, x => x.MapFrom(i => i.Species.Names.First(n => n.LanguageId == 9)))
+                    .ForMember(p => p.Name, x => x.MapFrom(i => i.Species.Names.First(n => n.Language.IsEnglish())))
                     .ForMember(p => p.Habitat, x => x.MapFrom(i => i.Species.Habitat))
-                    .ForMember(p => p.DefaultForm, x => x.MapFrom(i => i.Forms.First(y => y.IsDefault)))
+                    .ForMember(p => p.DefaultForm, x => x.MapFrom( i => i.Forms.First(y => y.IsDefault)))
                     .ForMember(p => p.ExtraForms, x => x.MapFrom(i => i.Forms.Where(y => !y.IsDefault)))
                     ;
             });
