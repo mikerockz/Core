@@ -9,3 +9,5 @@ Temp
 *.csproj
 Debug
 Release
+bin
+obj
