@@ -9,6 +9,8 @@ namespace NXT.DAL.EF.EntityMaps
         {
             HasKey(x => x.Id);
             Property(x => x.Identifier);
+
+            ToTable("regions");
         }
     }
 }

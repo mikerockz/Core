@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Conventions\RubyCaseConvention.cs" />
     <Compile Include="EntityMaps\RegionMap.cs" />
+    <Compile Include="EntityMaps\RegionNameMap.cs" />
     <Compile Include="NxtContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

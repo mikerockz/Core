@@ -10,7 +10,9 @@ namespace NXT.DAL.Entities.Names
     {
         public Language Language { get; set; }
         public T Owner { get; set; }
-
         public string Name { get; set; }
+
+        public int OwnerId { get; set; }
+        public int LanguageId { get; set; }
     }
 }

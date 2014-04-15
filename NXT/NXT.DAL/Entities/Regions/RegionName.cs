@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NXT.DAL.Entities.Names;
 
 namespace NXT.DAL.Entities.Regions
 {
-    class RegionName
+    public class RegionName : AbstractName<Region>
     {
     }
 }
